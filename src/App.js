@@ -18,19 +18,20 @@ function App() {
   return (
     <div className="App">
       <FormProvider {...methods}>
-          <h1>Regístrate en Fitness4Life</h1>
-          <form onSubmit={methods.handleSubmit(onSubmit)}>
-            <PersonaInfo/>
-            <p></p>
-            
-            <ContactInfo/>
-            <p></p>
-            
-            <Training/>
-            <p></p>
-            
-            <Submit/>
-          </form>
+        <h1 style={{ color: "white" }}>Regístrate en Fitness4Life</h1>
+
+        <form onSubmit={methods.handleSubmit(onSubmit)}>
+          <PersonaInfo/>
+          <p></p>
+
+          <ContactInfo/>
+          <p></p>
+
+          <Training/>
+          <p></p>
+
+          <Submit/>
+        </form>
       </FormProvider>
 
     </div>
