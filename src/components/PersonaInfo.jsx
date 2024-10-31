@@ -8,12 +8,19 @@ function PersonaInfo() {
   return (
     <div className={styles.container}>
       <label className="form-label">Nombre:</label>
-      <input {...register("name", { required: "Nombre requerido" })} />
+      <input {
+        ...register("name", { required: "Nombre requerido" })
+        } />
+
       {errors.name && <span className={styles.error}>{errors.name.message}</span>}
+
       <p></p>
       
       <label className="form-label">Edad: </label>
-      <input type="number" {...register("age", { required: "Edad requerida" })} />
+      <input type="number" {
+        ...register("age", { required: "Edad requerida" })
+        } />
+
       {errors.age && <span className={styles.error}>{errors.age.message}</span>}
     </div>
   );

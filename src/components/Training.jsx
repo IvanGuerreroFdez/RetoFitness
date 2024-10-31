@@ -8,6 +8,7 @@ function Training() {
   return (
     <div className={styles.container}>
       <label className="form-label">Objetivo de entrenamiento: </label>
+      
       <select {...register("goal")}>
         <option value="muscle">Ganancia de masa muscular</option>
         <option value="weightLoss">Pérdida de peso</option>

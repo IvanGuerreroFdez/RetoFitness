@@ -6,9 +6,7 @@ function Submit() {
   const { formState } = useFormContext();
 
   return (
-    <button className={styles.submit} type="submit" disabled={!formState.isValid}>
-      Registrarse
-    </button>
+    <button className={styles.submit} type="submit" disabled={!formState.isValid}>¡¡¡Darse de alta!!!</button>
   );
 };
 export default Submit;
